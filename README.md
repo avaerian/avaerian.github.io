@@ -1,75 +1,7 @@
-# Nuxt Minimal Starter
+> [!NOTE]
+> Under construction; actively being developed.
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+# Welcome to my Website
 
-## Setup
+Welcome to my personal website. Developed using Bun, Nuxt, and Vue, this website is a place where you can explore information about me, the projects I'm currently working on and developing, blog posts regarding various coding updates, undertakings, problems and solutions, and more, and find donation links to support my work. I may also plan to have documentation and taskboards for the various projects I contribute to and develop, but everything is still under construction.
 
-Make sure to install dependencies:
-
-```bash
-# npm
-npm install
-
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
-```
-
-## Development Server
-
-Start the development server on `http://localhost:3000`:
-
-```bash
-# npm
-npm run dev
-
-# pnpm
-pnpm dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
