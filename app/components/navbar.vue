@@ -6,23 +6,23 @@
             </div>
             
             <div class="nav-center">
-                <div class="nav-right">
+                <div class="nav-center-element">
                     <ul>
                         <li><a href="/">Home</a></li>
                         <li><a href="/projects">Projects</a></li>
                         <li><a href="/blog">Blog</a></li>
-                        <li><a href="/donate">Donate</a></li>
+                        <li><a href="/donate">Documentation</a></li>
                     </ul>
                 </div>
-                <div class="nav-left">
+                <!--<div class="nav-center-element">
                     <ul>
                         <li><a href="/blog">Blog</a></li>
                         <li><a href="/donate">Donate</a></li>
                     </ul>
-                </div>
+                </div>-->
             </div>
 
-            <div class="nav-donate nav-end">
+            <div class="nav-end nav-donate">
                 <ul>
                     <li><a href="#">Sponsor</a></li>
                     <li><a href="#">Donate</a></li>
@@ -37,12 +37,17 @@
 </script>
 
 <style>
+    :root {
+        --navbar-height: 80px;
+        --navbar-width: 80%;
+    }
+
     nav {
         position: sticky;
         width: 100%;
-        height: 80px;
+        height: var(--navbar-height);
         top:0;
-        background: red;
+        /* background: red; */
         z-index: 10000;
         display: flex;
         justify-content: center;
@@ -50,12 +55,18 @@
 
     .nav-content {
         display: flex;
-        justify-content: space-between;
+        box-sizing: border-box;
+        /* flex: 0 0 1; */
+        justify-content:space-between;
         background: gold;
-        width: 80%;
+        width: var(--navbar-width);
+        max-width: 1400px;
         height: 100%;
-        /*margin-inline: auto;*/
         align-items: center;
+    }
+
+    .nav-content > * {
+        width: 100%;
     }
 
     .nav-logo {
@@ -68,11 +79,30 @@
         display: flex;
         flex-direction: row;
         width: fit-content;
+        height: 50px;
+        margin-inline: auto;
+        /* background: red; */
     }
 
-    .nav-center>*>ul {
-        width: 60%;
-        max-width: 700px;
+    .nav-center-element {
+        margin-inline: 20px;
+    }
+
+    /* .nav-center-element:only-of-type {
+        margin-inline: 0;
+    } */
+
+    .nav-center-element:first-child {
+        margin-inline-start: 0;
+    }
+
+    .nav-center-element:last-child {
+        margin-inline-end: 0;
+    }
+
+    .nav-center-element>ul {
+        width: 100%;
+        height: 100%;
         display: flex;
         flex-direction: row;
         padding: 0;
@@ -82,18 +112,23 @@
 
     }
 
-    .nav-center>*>ul>li {
+    .nav-center-element>ul>li {
         width: fit-content;
         height: fit-content;
-        background-color: green;
-        padding: 20px;
         display: table;
+        margin-inline: 4px;
+        box-sizing: border-box;
+    }
+
+    .nav-center-element>ul>li>a {
+        background-color: green;
+        box-sizing: border-box;
+        padding: 20px;
     }
 
     .nav-end {
         background: brown;
         justify-content: flex-end;
-        flex: 1;
     }
 
     .nav-donate {
@@ -102,8 +137,14 @@
     }
 
     .nav-donate>ul {
+        display: flex;
+        flex-direction: row;
         list-style: none;
         padding: 0;
         background: white;
+    }
+
+    .nav-donate>ul>li>a {
+        text-decoration: n;
     }
 </style>
