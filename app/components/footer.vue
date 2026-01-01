@@ -20,7 +20,7 @@
             </div>
             <div class="footer-bottom">
                 <!-- TODO: switch this to be inserted using TS with Date/Time API -->
-                <p>Copyright © 2025 Gabriel Simon. All rights reserved.</p>
+                <p>Copyright © {{ new Date().getUTCFullYear().toString() }} Gabriel Simon. All rights reserved.</p>
                 <p>Made with ❤️ by Gabriel Simon.</p>
             </div>
         </div>
@@ -28,7 +28,6 @@
 </template>
 
 <script lang="ts" setup>
-
 
 </script>
 
