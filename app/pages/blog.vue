@@ -1,6 +1,6 @@
 <template>
-  <div>
-    
+  <div class="blog">
+    <p>Test content</p>
   </div>
 </template>
 
@@ -9,5 +9,9 @@
 </script>
 
 <style>
-
+    .blog {
+        background: gray;
+        height: 500px;
+        width: 100vw;
+    }
 </style>
