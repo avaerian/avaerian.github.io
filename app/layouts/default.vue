@@ -13,5 +13,6 @@
 <style>
     * {
         margin: 0;
+        font-family: "Google Sans Flex";
     }
 </style>

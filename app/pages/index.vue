@@ -9,6 +9,9 @@
             <a href="/blog">Go to blog</a>
             <a href="/blog">Go to blog</a>
         </section>
+        <section class="more">
+
+        </section>
     </div>
 </template>
 
@@ -22,6 +25,11 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        background-size: 40px 40px;
+        background-color: lightgray;
+        background-image: 
+            linear-gradient(rgba(0, 119, 255, 0.221) 1px, transparent 1px), 
+            linear-gradient(90deg, rgba(0, 119, 255, 0.162) 1px, transparent 1px);
     }
 
     .intro {
