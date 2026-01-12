@@ -1,41 +1,49 @@
 <template>
-    <nav>
-        <div class="nav-content">
-            <div class="nav-end nav-logo">
-                <div class="nav-profile">
-                    <img src="assets/linkedin-pfp.jpeg">
-                    <a href="/"><h2>avaerian</h2></a>
+    <header>
+        <div class="nav-container">
+
+            <div class="nav-content">
+                <div class="nav-end nav-logo">
+                    <div class="nav-profile">
+                        <img src="assets/linkedin-pfp.jpeg">
+                        <!-- review the bottom text; monospaced font,
+                            maybe different colors depending on section
+                            or character(s)
+                        -->
+                        <a href="/"><h2>[AVAERIAN.DEV]</h2></a>
+                    </div>
                 </div>
-            </div>
-            
-            <div class="nav-center">
-                <div class="nav-center-element">
+
+                <div class="nav-center">
+                    <div class="nav-center-element">
+                        <ul>
+                            <li><a href="/">Home</a></li>
+                            <li><a href="/">About</a></li>
+                            <li><a href="/projects">Projects</a></li> <!-- TODO: add drop down of projects -->
+                            <li><a href="/blog">Blog</a></li>
+                            <li><a href="/donate">Documentation</a></li>
+                        </ul>
+                    </div>
+                    <!--<div class="nav-center-element">
+                        <ul>
+                            <li><a href="/blog">Blog</a></li>
+                            <li><a href="/donate">Donate</a></li>
+                        </ul>
+                    </div>-->
+                </div>
+
+                <div class="nav-end nav-donate"> <!-- if used, could have a drop down of donation/tip options -->
                     <ul>
-                        <li><a href="/">Home</a></li>
-                        <li><a href="/">About</a></li>
-                        <li><a href="/projects">Projects</a></li> <!-- TODO: add drop down of projects -->
-                        <li><a href="/blog">Blog</a></li>
-                        <li><a href="/donate">Documentation</a></li>
+                        <li class="sponsor-btn">
+                            <a href="#"><Icon class="heart-icon" icon="material-symbols:favorite-outline-rounded"/><p>Sponsor</p></a>
+                        </li>
+                        <!-- <li><a href="#">Donate</a></li> -->
                     </ul>
                 </div>
-                <!--<div class="nav-center-element">
-                    <ul>
-                        <li><a href="/blog">Blog</a></li>
-                        <li><a href="/donate">Donate</a></li>
-                    </ul>
-                </div>-->
             </div>
 
-            <div class="nav-end nav-donate"> <!-- if used, could have a drop down of donation/tip options -->
-                <ul>
-                    <li class="sponsor-btn">
-                        <a href="#"><Icon class="heart-icon" icon="material-symbols:favorite-outline-rounded"/><p>Sponsor</p></a>
-                    </li>
-                    <!-- <li><a href="#">Donate</a></li> -->
-                </ul>
-            </div>
         </div>
-    </nav>
+    </header>
 </template>
 
 <script lang="ts" setup>
@@ -44,21 +52,55 @@ import { Icon } from '@iconify/vue';
 
 </script>
 
+<!-- use another style block for mobile? --><style></style>
+
 <style>
     :root {
         --navbar-height: 80px;
         --navbar-width: 80%;
+        --color-blue-black: #0b0f1a;
     }
 
-    nav {
-        position: sticky;
+    header {
+        /* position: sticky; */
         width: 100%;
         height: var(--navbar-height);
         top:0;
-        background: #0b0f1a;
+        /* background: var(--color-blue-black); */
         z-index: 10000;
         display: flex;
         justify-content: center;
+        border-bottom: 1px solid lightgray;
+    }
+
+    /* NOTE: css for nav-width-size class will expand significantly when working
+                with
+    */
+    .nav-container, .nav-width-size {
+        width: var(--navbar-width);
+        max-width: 1320px;
+    }
+
+    .nav-container {
+        background: gold;
+        border-inline: 1px solid lightgray;
+    }
+
+    .nav-content {
+        display: flex;
+        box-sizing: border-box;
+        /* flex: 0 0 1; */
+        justify-content:space-between;
+        height: 100%;
+        align-items: center;
+
+        margin-inline: 20px;
+    }
+
+    .nav-content>* {
+        width: 100%;
+        height: 50px;
+        background: red;
     }
 
     .nav-profile {
@@ -69,6 +111,7 @@ import { Icon } from '@iconify/vue';
 
     .nav-profile>a {
         color: #cfcfcf;
+        background: green;
         text-decoration: none;
     }
 
@@ -83,31 +126,13 @@ import { Icon } from '@iconify/vue';
     .nav-profile>*:last-child {
         margin-inline-end: 0;
     }
-    
+
     .nav-profile>img {
         aspect-ratio: 1;
         object-fit: contain;
         height: calc(var(--navbar-height) - 28px);
         /* height: 58px; */
         border-radius: 50%;
-    }
-
-    .nav-content {
-        display: flex;
-        box-sizing: border-box;
-        /* flex: 0 0 1; */
-        justify-content:space-between;
-        /* background: gold; */
-        width: var(--navbar-width);
-        max-width: 1320px;
-        height: 100%;
-        align-items: center;
-    }
-
-    .nav-content > * {
-        width: 100%;
-        height: 50px;
-        /* background: red; */
     }
 
     .nav-logo {
@@ -184,7 +209,7 @@ import { Icon } from '@iconify/vue';
         align-items: center;
         padding: 0;
     }
-    
+
     .nav-donate>ul>li {
         height: fit-content;
     }
