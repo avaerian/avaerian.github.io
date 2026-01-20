@@ -4,21 +4,16 @@
             
             <div class="container nav-width-size">
                 <div class="content">
-                    <h1>Hello, world!</h1>
-                    <p>Goodbye, world</p>
-                    <p>Goodbye, world</p>
-                    <p>Goodbye, world</p>
-                    <p>Goodbye, world</p>
-                    <a href="/blog">Go to blog</a>
-                    <a href="/blog">Go to blog</a>
+                    <h1>Welcome to my Website</h1>
                 </div>
 
             </div>
         </section>
         
         <section class="more">
-            
+
             <div class="container nav-width-size">
+                <div class="circle c1" style="left: -170px; top: 100px;"></div>
                 <div class="cool-tag">1.</div>
                 <div class="content">
                     <h1>Hello, world!</h1>
@@ -38,6 +33,16 @@
             <div class="container nav-width-size">
                 <div class="content">
                     <h2>Explore projects</h2>
+                    <div class="projects">
+                        <ProjectEntry img="https://assets.nintendo.com/image/upload/ar_16:9,c_lpad,w_1240/b_white/f_auto/q_auto/store/software/switch/70010000000964/a28a81253e919298beab2295e39a56b7a5140ef15abdb56135655e5c221b2a3a"
+                        name="Ether" desc="A skyblock project" link="https://github.com/avaerian/Ether"></ProjectEntry>
+                        <ProjectEntry img="https://assets.nintendo.com/image/upload/ar_16:9,c_lpad,w_1240/b_white/f_auto/q_auto/store/software/switch/70010000000964/a28a81253e919298beab2295e39a56b7a5140ef15abdb56135655e5c221b2a3a"
+                        name="Hello, world!" desc="Goodbye, world!" link="https://github.com/avaerian/Ether"></ProjectEntry>
+                        <ProjectEntry img="https://assets.nintendo.com/image/upload/ar_16:9,c_lpad,w_1240/b_white/f_auto/q_auto/store/software/switch/70010000000964/a28a81253e919298beab2295e39a56b7a5140ef15abdb56135655e5c221b2a3a"
+                        name="Hello, world!" desc="Goodbye, world!" link="https://github.com/avaerian/Ether"></ProjectEntry>
+                        <ProjectEntry img="https://assets.nintendo.com/image/upload/ar_16:9,c_lpad,w_1240/b_white/f_auto/q_auto/store/software/switch/70010000000964/a28a81253e919298beab2295e39a56b7a5140ef15abdb56135655e5c221b2a3a"
+                        name="Hello, world!" desc="Goodbye, world!" link="https://github.com/avaerian/Ether"></ProjectEntry>
+                    </div>
                 </div>
             </div>
         </section>
@@ -123,5 +128,30 @@
     .more2>.container>.content {
         height: 690px;
         /* background: blue; */
+    }
+
+    .circle {
+        position:absolute;
+        background:linear-gradient(135deg, #ceffad 1%,#2ad39e 100%);;
+        border-radius:50%;
+        box-shadow: inset 0px 0px 50px -12px rgba(129, 129, 129, 0.208);
+        z-index:3;
+    }
+
+    .c1 {
+        width: 120px;
+        height: 120px;
+    }
+
+    .projects {
+        position: relative;
+        top: 30px;
+        display: flex;
+        flex-direction: row;
+        row-gap: 24px;
+        column-gap: 24px;
+        /* background: red; */
+        width: 100%;
+        height: 100%;
     }
 </style>
