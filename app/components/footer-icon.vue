@@ -3,22 +3,36 @@
         type: string,
         icon: string,
         href: string,
+        iconstyle?: string,
     }
     const {} = defineProps<Props>()
 </script>
 
 <template>
     <div class="icon-wrapper">
-        <a :href="href"><Icon class="icon" :class="'icon-' + type" :name="icon"/></a>
+        <a :href="href"><Icon class="icon" :class="'icon-' + type" :name="icon" :style="iconstyle"/></a>
     </div>
 </template>
 
 <style>
     .icon-wrapper {
+        position: relative;
         margin-inline: 20px;
-        background: green;
         padding: 8px;
+        /* background: rgba(182, 182, 182, 0.487); */
         border-radius: 8px;
+    }
+
+    .icon-wrapper::before {
+        position: relative;
+        content: '';
+        backdrop-filter: blur(8px);
+        transform: scale(0);
+        transition: 0.4s all;
+    }
+
+    .icon-wrapper:hover::before {
+        transform: scale(1);
     }
 
     .icon {
