@@ -18,10 +18,10 @@
                     <div class="nav-center-element">
                         <ul>
                             <li><a href="/">Home</a></li>
-                            <li><a href="/">About</a></li>
+                            <li><a href="/about">About</a></li>
                             <li><a href="/projects">Projects</a></li> <!-- TODO: add drop down of projects -->
                             <li><a href="/blog">Blog</a></li>
-                            <li><a href="/donate">Documentation</a></li>
+                            <li><a href="/docs">Documentation</a></li>
                         </ul>
                     </div>
                     <!--<div class="nav-center-element">
@@ -82,7 +82,7 @@ import { Icon } from '@iconify/vue';
     }
 
     .nav-container {
-        background: gold;
+        /* background: gold; */
         border-inline: 1px solid lightgray;
     }
 
@@ -100,7 +100,7 @@ import { Icon } from '@iconify/vue';
     .nav-content>* {
         width: 100%;
         height: 50px;
-        background: red;
+        /* background: red; */
     }
 
     .nav-profile {
@@ -111,7 +111,7 @@ import { Icon } from '@iconify/vue';
 
     .nav-profile>a {
         color: #cfcfcf;
-        background: green;
+        /* background: green; */
         text-decoration: none;
     }
 
@@ -173,7 +173,7 @@ import { Icon } from '@iconify/vue';
         flex-direction: row;
         padding: 0;
         list-style: none;
-        background: orange;
+        /* background: orange; */
         align-items: center; /* vertical align buttons */
 
     }
@@ -187,10 +187,32 @@ import { Icon } from '@iconify/vue';
     }
 
     .nav-center-element>ul>li>a {
-        background-color: green;
+        position: relative;
+        /* background-color: green; */
+        color: black;
         box-sizing: border-box;
         padding: 20px;
         text-decoration: none;
+        font-weight: 600;
+        text-transform: uppercase;
+        font-family: "Google Sans Code", monospace;
+    }
+
+    .nav-center-element>ul>li>a::before {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background: black;
+        height: 5px;
+        width: 100%;
+        content:'';
+        transition: 0.4s all;
+        transform: scale(0, 1);
+        border-radius: 24px;
+    }
+
+    .nav-center-element>ul>li>a:hover::before {
+        transform: scale(1, 1);
     }
 
     .nav-end {
