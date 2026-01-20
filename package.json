@@ -17,7 +17,8 @@
     "vue-router": "^4.6.3"
   },
   "devDependencies": {
-    "@iconify-json/material-symbols": "^1.2.50",
+    "@iconify-json/lineicons": "^1.2.6",
+    "@iconify-json/material-symbols": "^1.2.52",
     "@iconify-json/simple-icons": "^1.2.63",
     "@nuxtclub/octicons": "^1.4.0"
   }

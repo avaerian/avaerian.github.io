@@ -11,7 +11,8 @@
         "vue-router": "^4.6.3",
       },
       "devDependencies": {
-        "@iconify-json/material-symbols": "^1.2.50",
+        "@iconify-json/lineicons": "^1.2.6",
+        "@iconify-json/material-symbols": "^1.2.52",
         "@iconify-json/simple-icons": "^1.2.63",
         "@nuxtclub/octicons": "^1.4.0",
       },
@@ -142,7 +143,9 @@
 
     "@esbuild/win32-x64": ["@esbuild/win32-x64@0.27.1", "", { "os": "win32", "cpu": "x64" }, "sha512-d5X6RMYv6taIymSk8JBP+nxv8DQAMY6A51GPgusqLdK9wBz5wWIXy1KjTck6HnjE9hqJzJRdk+1p/t5soSbCtw=="],
 
-    "@iconify-json/material-symbols": ["@iconify-json/material-symbols@1.2.50", "", { "dependencies": { "@iconify/types": "*" } }, "sha512-71tjHR70h46LHtBFab3fAd2V/wPTO7JMV5lKnRn3IcF303LaFgAlO0BZeTJDcmCv9d0snRZmnoLZAJVD7/eisw=="],
+    "@iconify-json/lineicons": ["@iconify-json/lineicons@1.2.6", "", { "dependencies": { "@iconify/types": "*" } }, "sha512-XDOzb5xUNxpOj0j2JPadPq4udrhYb92d6jT7jey9CAJfGhSyYMzk5vmNqWormZy0ETxiHojs2ERpY9KjLjt7rA=="],
+
+    "@iconify-json/material-symbols": ["@iconify-json/material-symbols@1.2.52", "", { "dependencies": { "@iconify/types": "*" } }, "sha512-vOBmoF2J5GeKgaTqOcdIHjuPXcGVvjRMlviGgE1jKAh85iXSsFmLVxiJKMXvijrGVLmcqrkEmkMiSem7uWfGpA=="],
 
     "@iconify-json/simple-icons": ["@iconify-json/simple-icons@1.2.63", "", { "dependencies": { "@iconify/types": "*" } }, "sha512-xZl2UWCwE58VlqZ+pDPmaUhE2tq8MVSTJRr4/9nzzHlDdjJ0Ud1VxNXPrwTSgESKY29iCQw3S0r2nJTSNNngHw=="],
 
