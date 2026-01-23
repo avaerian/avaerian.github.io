@@ -53,12 +53,6 @@
         margin-block: 24px;
     }
 
-    @media (max-width: 500px) {
-        .footer-content > * {
-            margin-block: 12%;
-        }
-    }
-
     .footer-top {
         /* background: lightgrey; */
         width: fit-content;
