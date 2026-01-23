@@ -26,7 +26,8 @@
 
 		@media (max-width: 500px) {
         .icon-wrapper {
-            margin-inline: 12%;
+						padding: 4px;
+            margin-inline: 4%;
         }
     }
 
