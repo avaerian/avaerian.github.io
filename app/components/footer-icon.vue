@@ -9,6 +9,7 @@
 </script>
 
 <template>
+		<!-- reconsider icon-wrapper -->
     <div class="icon-wrapper">
         <a :href="href"><Icon class="icon" :class="'icon-' + type" :name="icon" :style="iconstyle"/></a>
     </div>
@@ -21,6 +22,12 @@
         padding: 8px;
         /* background: rgba(182, 182, 182, 0.487); */
         border-radius: 8px;
+    }
+
+		@media (max-width: 500px) {
+        .icon-wrapper {
+            margin-inline: 12%;
+        }
     }
 
     .icon-wrapper::before {
