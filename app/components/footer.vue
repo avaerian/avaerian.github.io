@@ -36,6 +36,7 @@
     .footer {
         background: rgb(17, 21, 22);
         height: 240px;
+        width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -50,6 +51,12 @@
 
     .footer-content > * {
         margin-block: 24px;
+    }
+
+    @media (max-width: 500px) {
+        .footer-content > * {
+            margin-block: 12%;
+        }
     }
 
     .footer-top {
