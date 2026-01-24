@@ -10,7 +10,7 @@
                             maybe different colors depending on section
                             or character(s)
                         -->
-                        <a href="/"><h2>[AVAERIAN.DEV]</h2></a>
+                        <a href="/"><h2>avaerian</h2></a>
                     </div>
                 </div>
 
@@ -35,7 +35,7 @@
                 <div class="nav-end nav-donate"> <!-- if used, could have a drop down of donation/tip options -->
                     <ul>
                         <li class="sponsor-btn">
-                            <a href="#"><Icon class="heart-icon" icon="material-symbols:favorite-outline-rounded"/><p>Sponsor</p></a>
+                            <a href="#"><Icon class="heart-icon" name="material-symbols:favorite-outline-rounded"/><p>Sponsor</p></a>
                         </li>
                         <!-- <li><a href="#">Donate</a></li> -->
                     </ul>
@@ -44,10 +44,10 @@
 
         </div>
     </header>
+    
 </template>
 
 <script lang="ts" setup>
-import { Icon } from '@iconify/vue';
 
 
 </script>
@@ -113,6 +113,7 @@ import { Icon } from '@iconify/vue';
         color: #cfcfcf;
         /* background: green; */
         text-decoration: none;
+        text-transform: uppercase;
     }
 
     .nav-profile>* {
@@ -189,7 +190,7 @@ import { Icon } from '@iconify/vue';
     .nav-center-element>ul>li>a {
         position: relative;
         /* background-color: green; */
-        color: black;
+        color: rgb(51 54 55);
         box-sizing: border-box;
         padding: 20px;
         text-decoration: none;
@@ -202,12 +203,12 @@ import { Icon } from '@iconify/vue';
         position: absolute;
         bottom: 0;
         left: 0;
-        background: black;
+        background: rgb(51 54 55);
         height: 5px;
         width: 100%;
         content:'';
         transition: 0.4s all;
-        transform: scale(0, 1);
+        transform: scale(1, 0);
         border-radius: 24px;
     }
 
