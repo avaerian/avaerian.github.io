@@ -33,9 +33,14 @@
 </script>
 
 <style>
+    :root {
+        --footer-height: 240px;
+        --footer-color: rgb(17, 21, 22);
+    }
+
     .footer {
-        background: rgb(17, 21, 22);
-        height: 240px;
+        background: var(--footer-color);
+        height: var(--footer-height);
         width: 100%;
         display: flex;
         justify-content: center;
@@ -51,6 +56,16 @@
 
     .footer-content > * {
         margin-block: 24px;
+    }
+
+    .footer-icon {
+        margin-inline: 10px;
+    }
+
+    @media (max-width: 600px) {
+        .footer-icon {
+            margin-inline: 1%;
+        }
     }
 
     .footer-top {
@@ -70,6 +85,7 @@
     .footer-bottom>* {
         margin-block: 4px;
         color: rgb(194, 194, 194);
+        text-align: center;
     }
 
     .footer-bottom>*:first-child {
